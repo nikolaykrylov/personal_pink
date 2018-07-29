@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-photo-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <img src="http://placehold.it/150x10" width="150" height="150" class="page-header__image">
+    </header>
+
+    <main class="page-main">
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="contest-form">
+        <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+
+        <div class="contest-form__person">
+          <label for="contest-form-surname">Фамилия</label>
+          <input type="text" name="contest-form-surname" id="contest-form-surname" placeholder="Укажите фамилию*">
+          <label for="contest-form-name">Имя</label>
+          <input type="text" name="contest-form-name" id="contest-form-name" placeholder="Введите ваше имя*">
+          <label for="contest-form-patronymic">Отчество</label>
+          <input type="text" name="contest-form-patronymic" id="contest-form-patronymic" placeholder="Ну и отчество тоже*">
+        </div>
+
+        <div class="contest-form__achievements">
+          <h2 class="achievements-header">ваши безбашенные достижения в путешествии</h2>
+          <input type="checkbox" name="achievements-checkbox" id="shark-selfie" checked>
+          <label for="shark-selfie">Сделал селфи с акулой</label>
+          <input type="checkbox" name="achievements-checkbox" id="burn-on-beach" checked>
+          <label for="burn-on-beach">Обгорел на пляже</label>
+          <input type="checkbox" name="achievements-checkbox" id="chuck-norris">
+          <label for="chuck-norris">Видел Чака Норриса</label>
+          <input type="checkbox" name="achievements-checkbox" id="bought-souvenirs">
+          <label for="bought-souvenirs">Накупил сувениров</label>
+          <input type="checkbox" name="achievements-checkbox" id="tower-withold" checked>
+          <label for="tower-withold">Удержал башню</label>
+          <input type="checkbox" name="achievements-checkbox" id="destroyed-hotel">
+          <label for="destroyed-hotel">Разгромил отель</label>
+        </div>
+
+        <div class="contest-form__contacts">
+          <label for="contest-form-phone">Номер телефона</label>
+          <input type="tel" name="contest-form-phone" id="contest-form-phone" placeholder="Номер, пожалуйста">
+          <label for="contest-form-email">Адрес почты</label>
+          <input type="text" name="contest-form-email" id="contest-form-email" placeholder="Введите почту*">
+        </div>
+
+        <div class="contest-form__app">
+          <h2 class="app-header">С каким приложением путешествовали?</h2>
+          <input type="radio" name="app-radio" id="ios" checked>
+          <label for="ios">Pink для iOS</label>
+          <input type="radio" name="app-radio" id="android">
+          <label for="android">Pink на Android</label>
+          <input type="radio" name="app-radio" id="windows-phone">
+          <label for="windows-phone">Windows Phone</label>
+        </div>
+
+        <div class="contest-form__textarea">
+          <label for="emotions-text">Опишите свои эмоции:</label>
+          <textarea id="emotions-text" name="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">Отправить форму</button>
+        <sub class="form-sub"><span class="form-sub__star">*</span>- обязательные поля</sub>
+
+      </form>
+
+    </main>
+
+    <footer class="photo-page-footer">
+      <a href="#" class="footer-logo"></a>
+      <div class="footer-soc-buttons">
+        <a class="footer-soc-buttons__tw" href="#"></a>
+        <a class="footer-soc-buttons__fb" href="#"></a>
+        <a class="footer-soc-buttons__youtube" href="#"></a>
+      </div>
+      <p class="copyright">Разработано</p>
+    </footer>
+
+
+
+  </body>
+</html>
