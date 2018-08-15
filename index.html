@@ -4,76 +4,137 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <header class="page-header">
-      <h1 class="display-hidden">Pink - приложение фотографий</h1>
       <a class="page-header__logo">pink</a>
       <nav class="main-nav">
-        <button class="main-nav__toggle"></button>
+        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </nav>
-      <img src="http://placehold.it/150x10" width="150" height="150" class="page-header__image">
     </header>
 
     <main class="page-main">
-
+      <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
       <section class="app-download">
+        <img class="app-download__image background-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+             alt="Изображение приложения на телефоне">
         <button class="app-download__button site-button">Скачать приложение</button>
         <ul class="app-download__platforms-list">
-          <li class="app-download__platforms-item--apple"></li>
-          <li class="app-download__platforms-item--android"></li>
-          <li class="app-download__platforms-item--windows"></li>
+          <!--todo sprite images for platforms icons-->
+          <li class="app-download__platforms-item"><a class="app-download__platforms-link--apple"
+                                                      href="https://www.apple.com/ru/ios/app-store/"></a></li>
+          <li class="app-download__platforms-item"><a class="app-download__platforms-link--android"
+                                                      href="https://play.google.com/store"></a></li>
+          <li class="app-download__platforms-item"><a class="app-download__platforms-link--windows-phone"
+                                                      href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"></a>
+          </li>
         </ul>
         <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="app-description">
-        <h2 class="app-description__title">Устали от серости мегаполиса?</h2>
-        <h2 class="app-description__title">Нам есть, что вам предложить!</h2>
-        <b class="app-description__subtitle">Поднимает настроение</b>
-        <p class="app-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <b class="app-description__subtitle">Меняет мир вокруг</b>
-        <p class="app-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <b class="app-description__subtitle">Заводит новых друзей</b>
+        <h2 class="visually-hidden">Описание приложения</h2>
+        <b class="app-description__slogan">Устали от серости мегаполиса?</b>
+        <b class="app-description__slogan">Нам есть, что вам предложить!</b>
+        <h3 class="app-description__title">Поднимает настроение</h3>
+        <p class="app-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+          кликов!</p>
+        <h3 class="app-description__title">Меняет мир вокруг</h3>
+        <p class="app-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+          эффект</p>
+        <h3 class="app-description__title">Заводит новых друзей</h3>
         <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        <img src="http://placehold.it/150x10" width="150" height="150" class="app-description__image">
+        <img class="app-description__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+             alt="Картинка телефона">
       </section>
 
       <section class="app-reviews">
-        <b class="app-reviews__author">Николай Петров</b>
-        <p class="app-reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <h2 class="app-reviews__header">Отзывы пользователей</h2>
+        <div class="app-reviews__slider">
+          <blockquote>
+            <b class="app-reviews__author">Николай Петров</b>
+            <cite class="app-reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</cite>
+          </blockquote>
+          <div class="slider-controls">
+            <button class="slider-controls__button visually-hidden">
+              Кнопка переключения слайдов
+            </button>
+            <input class="slider-controls__input" type="radio" id="btn-1" name="toggle" checked>
+            <input class="slider-controls__input" type="radio" id="btn-2" name="toggle">
+            <input class="slider-controls__input" type="radio" id="btn-3" name="toggle">
+            <label class="slider-controls__label" for="btn-1"></label>
+            <label class="slider-controls__label" for="btn-2"></label>
+            <label class="slider-controls__label" for="btn-3"></label>
+          </div>
+        </div>
       </section>
 
       <section class="prices">
-        <div class="prices__header">
-          <b class="prices__title">стандарт</b>
-          <p class="prices__price">3,99 usd</p>
+        <!--todo Maybe i should use table tag for prices?-->
+        <div class="prices__slider">
+          <div class="prices__slide-1">
+            <div class="prices__header">
+              <b class="prices__title">база</b>
+              <p class="prices__price">1,99 usd</p>
+            </div><p class="prices__item">розовый фильтр</p>
+            <p class="prices__item">смайлики</p>
+            <p class="prices__item">комментарии</p>
+          </div>
+          <div class="prices__slide-2">
+            <div class="prices__header">
+              <b class="prices__title">стандарт</b>
+              <p class="prices__price">3,99 usd</p>
+            </div><p class="prices__item">розовый фильтр</p>
+            <p class="prices__item">смайлики</p>
+            <p class="prices__item">комментарии</p>
+          </div>
+          <div class="prices__slide-3">
+            <div class="prices__header">
+              <b class="prices__title">анлим</b>
+              <p class="prices__price">9,99 usd</p>
+            </div><p class="prices__item">розовый фильтр</p>
+            <p class="prices__item">смайлики</p>
+            <p class="prices__item">комментарии</p>
+          </div>
         </div>
-        <p class="prices__item">розовый фильтр</p>
-        <p class="prices__item">смайлики</p>
-        <p class="prices__item">комментарии</p>
+        <div class="slider-controls">
+          <button class="slider-controls__button visually-hidden">
+            Кнопка переключения слайдов
+          </button>
+          <input class="slider-controls__input" type="radio" id="btn-4" name="toggle">
+          <input class="slider-controls__input" type="radio" id="btn-5" name="toggle" checked>
+          <input class="slider-controls__input" type="radio" id="btn-6" name="toggle">
+          <label class="slider-controls__label" for="btn-4"></label>
+          <label class="slider-controls__label" for="btn-5"></label>
+          <label class="slider-controls__label" for="btn-6"></label>
+        </div>
       </section>
 
     </main>
 
     <footer class="index-page-footer">
-      <h2 class="contacts__title">Остались вопросы?</h2>
-      <h2 class="contacts__title">Свяжитесь с нами!</h2>
-      <b class="contacts__action-title">Звоните:</b>
-      <p class="contacts__action-content">+7(812)555-66-66</p>
-      <b class="contacts__action-title">Пишите:</b>
-      <p class="contacts__action-content">mail@htmlacademy.ru</p>
-      <b class="contacts__action-title">Приезжайте в гости:</b>
-      <p class="contacts__action-content">ул. Большая Конюшенная, 19/8</p>
-      <img src="http://placehold.it/150x10" width="150" height="150" alt="карта" class="contacts__map">
+      <h2 class="index-page-footer__title visually-hidden">
+        Контакты
+      </h2>
+      <b class="index-page-footer__text">Остались вопросы?</b>
+      <b class="index-page-footer__text">Свяжитесь с нами!</b>
+      <h3 class="index-page-footer__action-title">Звоните:</h3>
+      <p class="index-page-footer__action-content">+7(812)555-66-66</p>
+      <h3 class="index-page-footer__action-title">Пишите:</h3>
+      <p class="index-page-footer__action-content">mail@htmlacademy.ru</p>
+      <h3 class="index-page-footer__action-title">Приезжайте в гости:</h3>
+      <p class="index-page-footer__action-content">ул. Большая Конюшенная, 19/8</p>
+      <img class="index-page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="карта" >
     </footer>
 
   </body>
