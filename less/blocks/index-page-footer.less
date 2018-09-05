@@ -1,3 +1,8 @@
+.index-page-footer {
+  padding-top: 45px;
+  text-align: center;
+}
+
 .index-page-footer__text {
   font-size: 24px;
   line-height: 1.2;
@@ -17,3 +22,41 @@
   color: @pink;
   font-weight: 300;
 }
+
+.index-page-footer__map-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.index-page-footer__map {
+  position: relative;
+  bottom: 225px;
+}
+
+.index-page-footer__map-container::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 35px;
+  background:
+    linear-gradient(to top right,transparent 49.5%,#fff 50%),
+    linear-gradient(to top left,transparent 49.5%,#fff 50%);
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.index-page-footer__map-marker {
+  position: absolute;
+  z-index: 3;
+  bottom: 110px;
+  left: 160px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icon-map-marker.svg);
+  background-repeat: no-repeat;
+}
+

@@ -1,6 +1,6 @@
 .main-nav {
-  position: relative;
   background-color: @blue;
+  min-width: 320px;
 }
 
 .main-nav__logo {
@@ -8,6 +8,18 @@
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-burger.svg");
 }
 
 .main-nav__link {
@@ -33,20 +45,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-}
-
-
-
-.main-nav__toggle {
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 50px;
-  height: 24px;
-  background-color: transparent;
-  border: none;
-  background-image: url("../img/icon-menu-burger.svg");
 }
 
 .main-nav--nojs .main-nav__list {

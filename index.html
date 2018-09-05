@@ -14,67 +14,82 @@
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <a class="main-nav__logo"><img src="img/logo-pink-white-mobile.svg" alt="Логотип"></a>
     <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
-      </ul>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+    </ul>
   </nav>
 </header>
 
 <main class="page-main">
   <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
-  <section class="app-download">
+  <section class="app-intro">
     <div class="background-image">
-      <img class="app-download__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+      <img class="app-intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
            alt="Изображение приложения на телефоне">
     </div>
-    <button class="app-download__button site-button">Скачать приложение</button>
-    <ul class="app-download__platforms-list">
+  </section>
+  <section class="app-download">
+    <button class="site-button site-button--white">Скачать приложение</button>
+    <ul class="app-download__list">
       <!--todo sprite images for platforms icons-->
-      <li class="app-download__platforms-item"><a class="app-download__platforms-link--apple"
-                                                  href="https://www.apple.com/ru/ios/app-store/"></a></li>
-      <li class="app-download__platforms-item"><a class="app-download__platforms-link--android"
-                                                  href="https://play.google.com/store"></a></li>
-      <li class="app-download__platforms-item"><a class="app-download__platforms-link--windows-phone"
-                                                  href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"></a>
+      <li class="app-download__item"><a
+        href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Приложение для iPhone</span></a>
+      </li>
+      <li class="app-download__item"><a
+        href="https://play.google.com/store"><span class="visually-hidden">Приложение для Android</span></a></li>
+      <li class="app-download__item"><a
+        href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">Приложение для Windows Phone</span></a>
       </li>
     </ul>
     <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   </section>
 
   <section class="app-description">
-    <h2 class="visually-hidden">Описание приложения</h2>
-    <b class="app-description__slogan">Устали от серости мегаполиса?</b>
-    <b class="app-description__slogan">Нам есть, что вам предложить!</b>
-    <h3 class="app-description__title">Поднимает настроение</h3>
-    <p class="app-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-      кликов!</p>
-    <h3 class="app-description__title">Меняет мир вокруг</h3>
-    <p class="app-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-      эффект</p>
-    <h3 class="app-description__title">Заводит новых друзей</h3>
-    <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-    <img class="app-description__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
-         alt="Картинка телефона">
+    <div class="container">
+      <h2 class="visually-hidden">Описание приложения</h2>
+      <div class="app-description__intro">
+        <p class="app-description__slogan">Устали от серости мегаполиса?</p>
+        <p class="app-description__slogan">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="app-description__main">
+        <h3 class="app-description__title">Поднимает настроение</h3>
+        <p class="app-description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+          несколько
+          кликов!</p>
+        <h3 class="app-description__title">Меняет мир вокруг</h3>
+        <p class="app-description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+          эффект</p>
+        <h3 class="app-description__title">Заводит новых друзей</h3>
+        <p class="app-description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+          новых</p>
+        <div class="app-description__image-block">
+          <img class="app-description__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+               alt="Картинка телефона">
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="app-reviews">
-    <h2 class="app-reviews__header">Отзывы пользователей</h2>
+  <section class="app-reviews container">
+    <h2 class="app-reviews__header visually-hidden">Отзывы пользователей</h2>
     <div class="app-reviews__slider">
-      <blockquote>
-        <b class="app-reviews__author">Николай Петров</b>
-        <cite class="app-reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</cite>
+      <blockquote class="app-reviews__quote">
+        <cite class="app-reviews__author">Николай Петров</cite>
+        <p class="app-reviews__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
       </blockquote>
+      <button class="slider-controls__button visually-hidden">
+        Кнопка переключения слайдов
+      </button>
+      <input class="slider-controls__input" type="radio" id="btn-1" name="toggle" checked>
+      <input class="slider-controls__input" type="radio" id="btn-2" name="toggle">
+      <input class="slider-controls__input" type="radio" id="btn-3" name="toggle">
       <div class="slider-controls">
-        <button class="slider-controls__button visually-hidden">
-          Кнопка переключения слайдов
-        </button>
-        <input class="slider-controls__input" type="radio" id="btn-1" name="toggle" checked>
-        <input class="slider-controls__input" type="radio" id="btn-2" name="toggle">
-        <input class="slider-controls__input" type="radio" id="btn-3" name="toggle">
         <label class="slider-controls__label" for="btn-1"></label>
         <label class="slider-controls__label" for="btn-2"></label>
         <label class="slider-controls__label" for="btn-3"></label>
@@ -83,35 +98,45 @@
   </section>
 
   <section class="prices">
-    <!--todo Maybe i should use table tag for prices?-->
-    <div class="prices__slider">
-      <div class="prices__slide-1">
-        <div class="prices__header">
-          <b class="prices__title">база</b>
-          <p class="prices__price">1,99 usd</p>
-        </div>
-        <p class="prices__item">розовый фильтр</p>
-        <p class="prices__item">смайлики</p>
-        <p class="prices__item">комментарии</p>
-      </div>
-      <div class="prices__slide-2">
-        <div class="prices__header">
-          <b class="prices__title">стандарт</b>
-          <p class="prices__price">3,99 usd</p>
-        </div>
-        <p class="prices__item">розовый фильтр</p>
-        <p class="prices__item">смайлики</p>
-        <p class="prices__item">комментарии</p>
-      </div>
-      <div class="prices__slide-3">
-        <div class="prices__header">
-          <b class="prices__title">анлим</b>
-          <p class="prices__price">9,99 usd</p>
-        </div>
-        <p class="prices__item">розовый фильтр</p>
-        <p class="prices__item">смайлики</p>
-        <p class="prices__item">комментарии</p>
-      </div>
+    <div class="prices__table-div">
+      <table class="prices__table">
+        <thead class="prices__table-head">
+        <tr class="prices__table-header-row">
+          <th class="prices__table-data"></th>
+          <th class="prices__table-data prices__title">База</th>
+          <th class="prices__table-data prices__title"><span class="prices__price--hit-text">Стандарт</span></th>
+          <th class="prices__table-data prices__title">Анлим</th>
+        </tr>
+        <tr class="prices__table-header-row">
+          <td class="prices__table-data"></td>
+          <td class="prices__table-data prices__price">1,99 usd</td>
+          <td class="prices__table-data prices__price">
+            <span class="prices__price--hit">3,99 usd</span>
+          </td>
+          <td class="prices__table-data prices__price">9,99 usd</td>
+        </tr>
+        </thead>
+        <tbody class="prices__table-body">
+        <tr class="prices__table-body-row">
+          <td class="prices__table-data prices__item visually-hidden">Розовый фильтр</td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Розовый фильтр</span><b class="visually-hidden">+</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Розовый фильтр</span><b class=" visually-hidden">+</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Розовый фильтр</span><b class=" visually-hidden">+</b></td>
+        </tr>
+        <tr class="prices__table-body-row">
+          <td class="prices__table-data prices__item visually-hidden">Смайлики</td>
+          <td class="prices__table-data prices__item"><span class="prices__item--unavailable">Смайлики</span><b class="visually-hidden">-</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Смайлики</span><b class="visually-hidden">+</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Смайлики</span><b class="visually-hidden">+</b></td>
+        </tr>
+        <tr class="prices__table-body-row">
+          <td class="prices__table-data prices__item visually-hidden">Комментарии</td>
+          <td class="prices__table-data prices__item"><span class="prices__item--unavailable">Комментарии</span><b class="visually-hidden">-</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--unavailable">Комментарии</span><b class="visually-hidden">-</b></td>
+          <td class="prices__table-data prices__item"><span class="prices__item--available">Комментарии</span><b class="visually-hidden">+</b></td>
+        </tr>
+        </tbody>
+      </table>
     </div>
     <div class="slider-controls">
       <button class="slider-controls__button visually-hidden">
@@ -140,7 +165,10 @@
   <p class="index-page-footer__action-content">mail@htmlacademy.ru</p>
   <h3 class="index-page-footer__action-title">Приезжайте в гости:</h3>
   <p class="index-page-footer__action-content">ул. Большая Конюшенная, 19/8</p>
-  <img class="index-page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="карта">
+  <div class="index-page-footer__map-container">
+    <img class="index-page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="карта">
+    <div class="index-page-footer__map-marker"></div>
+  </div>
 </footer>
 
 <script src="js/app.js"></script>

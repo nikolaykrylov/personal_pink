@@ -1,5 +1,30 @@
 .prices {
-  background-color: @grey-1;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(174deg, #ffffff 57px, #f2f2f2 57px);
+}
+
+.prices__table {
+  margin-bottom: 40px;
+  border: 2px solid @grey-1;
+  border-collapse: collapse;
+  border-top: none;
+}
+
+.prices__table-head {
+  background-color: @blue;
+}
+
+.prices__table-body {
+  background-color: white;
+}
+
+.prices__table-data {
+  text-align: left;
+  padding: 15px 20px;
+  min-width: 275px;
+  box-sizing: border-box;
+  border: 2px solid @grey-1;
 }
 
 .prices__title {
@@ -11,14 +36,105 @@
 
 .prices__price {
   font-size: 24px;
+  font-weight: 300;
   line-height: 30px;
   color: white;
   text-transform: uppercase;
 }
 
 .prices__item {
+  position: relative;
   color: @blue;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: left;
 }
+
+
+.prices__table-div {
+  overflow-x: scroll;
+}
+
+.prices__table-div::-webkit-scrollbar {
+  display: none;
+}
+
+.prices__table-header-row .prices__table-data {
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+}
+
+
+.prices__table-header-row .prices__title {
+  padding-bottom: 0;
+}
+
+.prices__table-header-row .prices__price {
+  padding-top: 0;
+}
+
+.prices__table-body-row:nth-child(1) .prices__table-data {
+  border-top: none;
+}
+
+.prices__price--hit {
+  position: relative;
+}
+
+.prices__price--hit::before {
+  bottom: 3px;
+  right: 115px;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 74px;
+  height: 73px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.prices__price--hit-text {
+  position: relative;
+}
+
+.prices__price--hit-text::before {
+  content: "Хит";
+  position: absolute;
+  z-index: 3;
+  width: 73px;
+  height: 74px;
+  color: white;
+  right: 107px;
+  bottom: -35px;
+  transform: rotate(-45deg);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.prices__item--available::after {
+  top: 25px;
+  right: 30px;
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+}
+
+.prices__item--unavailable::after {
+  top: 15px;
+  right: 30px;
+  content: "";
+  position: absolute;
+  z-index: 20;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+}
+
+
