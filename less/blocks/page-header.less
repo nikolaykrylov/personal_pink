@@ -3,7 +3,13 @@
   z-index: 1;
   height: 65px;
   width: 100%;
+  min-width: 320px;
   background-color: rgba(29, 38, 49, 0.6);
-  border-bottom: 1px solid black;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
 }

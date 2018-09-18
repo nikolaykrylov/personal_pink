@@ -27,11 +27,28 @@
   <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
   <section class="app-intro">
     <div class="background-image">
-      <img class="app-intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
-           alt="Изображение приложения на телефоне">
+        <!--<img class="app-intro__image"-->
+             <!--srcset="img/iphone-hand-mobile@1x.png 258w,-->
+                     <!--img/iphone-hand-mobile@2x.png 2x,-->
+                     <!--img/iphone-hand-tablet@1x.png 700w,-->
+                     <!--img/iphone-hand-tablet@2x.png 2x,-->
+                     <!--img/iphone-hand-desktop@1x.png 1050w,-->
+                     <!--img/iphone-hand-desktop@2x.png 2x"-->
+             <!--sizes="(max-width: 659px) 258px,-->
+                    <!--(max-width: 1199px) 700px,-->
+                    <!--1050px"-->
+             <!--src="img/iphone-hand-mobile@1x.png"-->
+             <!--alt="Изображение приложения на телефоне">-->
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+        <img class="app-intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Рекламный постер">
+      </picture>
+
     </div>
   </section>
   <section class="app-download">
+    <b class="app-download__slogan">Взгляните на жизнь иначе!</b>
     <button class="site-button site-button--white">Скачать приложение</button>
     <ul class="app-download__list">
       <!--todo sprite images for platforms icons-->
@@ -48,7 +65,6 @@
   </section>
 
   <section class="app-description">
-    <div class="container">
       <h2 class="visually-hidden">Описание приложения</h2>
       <div class="app-description__intro">
         <p class="app-description__slogan">Устали от серости мегаполиса?</p>
@@ -69,11 +85,10 @@
           <img class="app-description__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
                alt="Картинка телефона">
         </div>
-      </div>
     </div>
   </section>
 
-  <section class="app-reviews container">
+  <section class="app-reviews">
     <h2 class="app-reviews__header visually-hidden">Отзывы пользователей</h2>
     <div class="app-reviews__slider">
       <blockquote class="app-reviews__quote">

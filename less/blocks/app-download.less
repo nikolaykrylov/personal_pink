@@ -2,12 +2,12 @@
   background-color: @blue;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 7px;
   border-bottom: 1px solid transparent;
 }
 
 .app-download__description {
   width: 240px;
-  //display: inline-block;
   font-size: 14px;
   line-height: 24px;
   color: white;
@@ -19,7 +19,7 @@
   width: 210px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 6px auto;
   padding: 0;
   list-style: none;
 }
@@ -27,6 +27,7 @@
 .app-download__item:nth-child(1) {
   cursor: pointer;
   background-image: url("../img/logo-apple.svg");
+  background-position: 3px 1px;
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -44,8 +45,38 @@
 .app-download__item:nth-child(3) {
   cursor: pointer;
   background-image: url("../img/logo-microsoft.svg");
-  background-position: 10px 15px;
+  background-position: 13px 13px;
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
+}
+
+.app-download__slogan {
+  font-size: 40px;
+  line-height: normal;
+  color: white;
+  font-weight: 300;
+  display: none;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .app-download {
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    background: none;
+  }
+
+  .app-download__slogan {
+    display: block;
+  }
+
+  .app-download__description {
+    font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+  }
 }
