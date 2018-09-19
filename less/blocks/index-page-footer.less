@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.index-page-footer__wrapper {
+  width: 240px;
+  margin: 0 auto;
+}
+
 .index-page-footer__text {
   font-size: 24px;
   line-height: 1.2;
@@ -26,7 +31,11 @@
 .index-page-footer__map-container {
   position: relative;
   height: 200px;
+  max-width: 320px;
   overflow: hidden;
+  margin-top: -27px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .index-page-footer__map {
@@ -48,15 +57,45 @@
   background-size: 50% 100%;
 }
 
-.index-page-footer__map-marker {
-  position: absolute;
-  z-index: 3;
-  bottom: 110px;
-  left: 160px;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url(../img/icon-map-marker.svg);
-  background-repeat: no-repeat;
+//.index-page-footer__map-marker {
+//  position: absolute;
+//  z-index: 3;
+//  bottom: 110px;
+//  left: 160px;
+//  content: "";
+//  width: 40px;
+//  height: 40px;
+//  background-image: url(../img/icon-map-marker.svg);
+//  background-repeat: no-repeat;
+//}
+
+.index-page-footer h3:nth-of-type(1) {
+  position: relative;
+  top: 16px;
 }
 
+.index-page-footer h3:nth-of-type(2) {
+  position: relative;
+  bottom: 6px;
+}
+
+.index-page-footer h3:nth-of-type(3) {
+  position: relative;
+  bottom: 23px;
+}
+
+.index-page-footer p:nth-of-type(1) {
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+}
+
+.index-page-footer p:nth-of-type(2) {
+  position: relative;
+  bottom: 25px;
+}
+
+.index-page-footer p:nth-of-type(3) {
+  position: relative;
+  bottom: 41px;
+}
